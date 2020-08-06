@@ -8,11 +8,6 @@ const url = 'mongodb://localhost/AlieanDBex';
 
 const app = express();
 
-mongoose.connect('mongodb://localhost/SUCCESS', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-});
-
 mongoose.connect(url, {useNewUrlParser:true,useUnifiedTopology:true});
 const con = mongoose.connection;
 
